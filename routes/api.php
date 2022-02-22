@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AddideeController;
+use App\Http\Controllers\IdeeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/addidee', [AddideeController::class, 'addidee']);
+
+
+Route::post('addidee', [IdeeController::class, 'addidee' ]);

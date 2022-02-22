@@ -7,7 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Idee extends Model
 {
-    use HasFactory;
-
-   
+    protected $table    = 'idee';
+    protected $filable  = ['titre', 'description','statut'];
+    public $timestamps = false;
+    
 }
